@@ -1,0 +1,47 @@
+<section class="contact">
+  <div id="contatos" class="container">
+    <form class="contact-form" (submit)="sendEmail($event)">
+      <label>Nome</label>
+      <input type="text" name="user_name" formControlName="name" required>
+      <label>Email</label>
+      <input type="email" name="user_email" formControlName="email" required>
+      <label>Mensagem</label>
+      <textarea name="message" formControlName="message" required></textarea>
+      
+      <!-- O botão de envio será exibido apenas enquanto o email não for enviado -->
+      <button *ngIf="!isSent" type="submit" [disabled]="isSending">
+        {{ isSending ? 'Enviando...' : 'ENVIAR' }}
+      </button>
+    </form>
+    
+    <hr class="separador"> 
+    <div class="contact-info">
+      <h3>Top Transportes Locações</h3>
+      <p>CNPJ: 29.179.909/0001-30</p>
+      <div class="link-container">
+        <a href="https://api.whatsapp.com/send?phone=77998094264&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20a%20respeito%20da%20Top%20Transportes%20Loca%C3%A7%C3%B5es."target="_blank">
+          <div class="logo">
+            <img src="../../assets/whatsapp.jpg" alt="whatsapp">
+          </div>
+        </a>
+      </div>
+      <div class="link-container">
+        <a href="https://www.instagram.com/toptransportes_/"target="_blank">
+          <div class="logo">
+            <img src="../../assets/instagram.jpg" alt="instagram">
+          </div>
+        </a>
+      </div>
+      <div class="link-container">
+        <a href="https://www.linkedin.com/company/top-transportes01/"target="_blank">
+          <div class="logo">
+            <img src="../../assets/linkedin.jpg" alt="Seu Logotipo">
+          </div>
+        </a>
+      </div>
+      <h3>Centro Comercial</h3>
+      <p>Alto do Brás - Lote 15</p>
+      <p>Caetité - BA CEP 46.400-000</p>
+    </div>
+  </div>
+</section>

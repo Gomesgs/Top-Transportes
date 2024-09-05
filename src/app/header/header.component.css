@@ -1,0 +1,63 @@
+.header {
+  background-color: #212529; /* Cor do fundo do header */
+  color: #fff; /* Cor do texto do header */
+  padding: 20px 0; /* Espaçamento do header */
+}
+
+.container {
+  display: flex; /* Layout Flex para organização */
+  justify-content: space-between; /* Distribui os elementos uniformemente */
+  align-items: center; /* Alinha os elementos verticalmente */
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+.logo {
+  /* Estilos da logo (pode usar um logotipo SVG ou imagem) */
+  /* Ex: */
+  width: 10%;
+  height: 5%;
+  object-fit: auto;
+}
+
+.imagem-customizada {
+  width: 120px;  /* Define a largura desejada da imagem */
+  height: auto;  /* Altura automática para manter a proporção */
+  max-height: 42px;  /* Define a altura máxima para a imagem */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+
+.nav ul {
+  list-style: none; /* Remove marcadores da lista */
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block; /*  Elementos da lista lado a lado */
+  margin-left: 20px; /* Espaçamento entre os itens */
+}
+
+.nav a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #fff; /* Cor do link */
+  font-weight: bold; /* Texto em negrito */
+}
+
+
+@media (max-width: 768px) { /* Ajuste a largura da tela */
+  .container {
+    flex-direction: column; /* Organiza verticalmente em telas menores */
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+  }
+
+  .nav ul {
+    margin-top: 10px; /* Adiciona espaçamento superior */
+  }
+
+  .nav li {
+    display: auto; /*  Elementos da lista em blocos */
+    margin-bottom: 5px; /* Espaçamento entre os itens */
+  }
+}

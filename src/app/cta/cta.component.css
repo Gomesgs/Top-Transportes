@@ -1,0 +1,39 @@
+/* CTA Section */
+.cta {
+  padding: 2rem 0;
+  background: #333;
+  color: #fff;
+  font-family: Bahnschrift;
+}
+
+.cta .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cta-content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: calc(1em + 0.5vw); /* Ajusta o tamanho da fonte conforme a largura da tela */
+  z-index: 10; /* Garante que o texto esteja sobre a imagem */
+  margin-bottom: 2rem;
+}
+
+.cta-content h2 {
+  margin-bottom: 20px;
+}
+
+.cta-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.cta-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}

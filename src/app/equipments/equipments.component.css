@@ -1,0 +1,82 @@
+/* service Section */
+.services {
+  font-family: Bahnschrift;
+  font-size: 2rem;
+  padding: 2rem 0;
+  margin-block: auto;
+}
+
+.services .container {
+  text-align: center;
+  color: black;
+  background: rgb(236, 108, 44, 70%);
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 1,5rem; /* Ajusta o tamanho da fonte conforme a largura da tela */
+  z-index: 10; /* Garante que o texto esteja sobre a imagem */
+  margin-bottom: 2rem;
+}
+
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os itens */
+  justify-content: center; /* Centraliza os itens */
+}
+
+.service {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background: rgb(41, 53, 70, 70%);
+  padding: 1em;
+  border-radius: 5px;
+  z-index: 10; /* Garante que o texto esteja sobre a imagem */
+  margin-bottom: 2rem;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  flex: 1 1 calc(33% - 40px); /* Exibe três itens por linha com espaçamento */
+  box-sizing: border-box;
+  max-width: 70%; /* Evita que o texto ultrapasse as bordas da imagem */
+}
+
+.service h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.service p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.imagem-customizada {
+  width: 50%;  /* Define a largura desejada da imagem */
+  height: auto;  /* Altura automática para manter a proporção */
+  max-height: 50%;  /* Define a altura máxima para a imagem */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+  display: block; /* Garante que a imagem se comporte como um bloco */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Ajuste responsivo para telas menores */
+@media (max-width: 1024px) {
+  .service {
+    flex: 1 1 calc(50% - 40px); /* Exibe dois itens por linha */
+  }
+}
+
+@media (max-width: 768px) {
+  .service {
+    flex: 1 1 100%; /* Exibe um item por linha */
+  }
+}
