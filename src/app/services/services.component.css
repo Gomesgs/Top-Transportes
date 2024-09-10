@@ -71,3 +71,27 @@
   top: 0; /* Posiciona a imagem no topo do slide */
   left: 0; /* Posiciona a imagem na esquerda do slide */
 }
+
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .services {
+    height: 100%; /* A altura do carrossel ocupa 75% da altura da tela */
+
+    font-size: 1rem;
+    left: 10px; /* Ajusta a posição do texto para 50px da borda esquerda em telas menores */
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .services {
+    height: 60%; /* A altura do carrossel ocupa 50% da altura da tela */
+
+    font-size: 0,5rem;
+    top: 10%; /* Ajusta a posição do texto a 10% do topo */
+    left: 10px; /* Ajusta a posição do texto para 30px da borda esquerda em smartphones */
+  }
+}

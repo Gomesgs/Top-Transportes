@@ -42,13 +42,12 @@
   padding: 1em;
   border-radius: 5px;
   max-width: 70%; /* Evita que o texto ultrapasse as bordas da imagem */
-  font-size: calc(1em + 0.5vw); /* Ajusta o tamanho da fonte conforme a largura da tela */
   z-index: 10; /* Garante que o texto esteja sobre a imagem */
 }
 
 .slide-text h1 {
   font-family: Bahnschrift;
-  font-size: 5rem;
+  font-size: 3rem;
   text-shadow: 2px, 2px,;
 }
 .slide-text p{
@@ -61,24 +60,33 @@
 /* Tablets */
 @media (max-width: 768px) {
   .carousel {
-    height: 75vh; /* A altura do carrossel ocupa 75% da altura da tela */
+    height: 60%; /* A altura do carrossel ocupa 75% da altura da tela */
   }
 
-  .slide-text {
-    font-size: calc(0.8em + 0.5vw);
-    left: 50px; /* Ajusta a posição do texto para 50px da borda esquerda em telas menores */
+  .slide-text h1 {
+    font-size: 1rem;
+    left: 10px; /* Ajusta a posição do texto para 50px da borda esquerda em telas menores */
+  }
+  .slide-text p {
+    font-size: 1rem;
+    left: 10px; /* Ajusta a posição do texto para 50px da borda esquerda em telas menores */
   }
 }
 
 /* Smartphones */
 @media (max-width: 480px) {
   .carousel {
-    height: 50vh; /* A altura do carrossel ocupa 50% da altura da tela */
+    height: 60%; /* A altura do carrossel ocupa 50% da altura da tela */
   }
 
-  .slide-text {
-    font-size: calc(0.7em + 0.5vw);
+  .slide-text h1, p{
+    font-size: 0,5rem;
     top: 10%; /* Ajusta a posição do texto a 10% do topo */
-    left: 30px; /* Ajusta a posição do texto para 30px da borda esquerda em smartphones */
+    left: 10px; /* Ajusta a posição do texto para 30px da borda esquerda em smartphones */
+  }
+  .slide-text p{
+    font-size: 0,5rem;
+    top: 10%; /* Ajusta a posição do texto a 10% do topo */
+    left: 10px; /* Ajusta a posição do texto para 30px da borda esquerda em smartphones */
   }
 }

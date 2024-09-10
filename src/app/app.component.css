@@ -1,0 +1,62 @@
+
+@media (max-width: 720px) {
+  .container {
+      width: 350px;
+      text-align: center;
+  }
+}
+
+@media (max-width: 645px) {
+  .img {
+      width: 400px;
+      margin-left: 10px;
+  }
+
+  .h1, p {
+      text-align: center;
+      width: 400px;
+   }
+
+   .btn {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .contatos-secao {
+     width: 200px;
+
+  }
+  .conteudo-principal h2 {
+      width: 200px;
+      text-align: center;
+  }
+
+  .btn {
+      width: 150px;
+  }
+}
+
+@media (max-width: 399px) {
+
+  .conteudo-principal h1 {
+     font-size: 3rem;
+  }
+  .conteudo-principal h2 {
+     font-size: 2rem;
+  }
+
+
+  .sobre-nos img {
+      width: 300px;
+      height: auto;
+      margin-left: 10px;
+  }
+
+  .contentsobre p {
+      text-align: center;
+      width: 200px;
+   }
+
+
+}
