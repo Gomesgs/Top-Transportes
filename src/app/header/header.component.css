@@ -25,12 +25,13 @@
   height: auto;  /* Altura automática para manter a proporção */
   max-height: 42px;  /* Define a altura máxima para a imagem */
   object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+  margin: 10px;
 }
 
 
 .nav ul {
   list-style: none; /* Remove marcadores da lista */
-  margin: 0;
+  margin: 20px 20px 20px;
   padding: 0;
 }
 
@@ -52,6 +53,9 @@
     align-items: flex-start; /* Alinha os elementos à esquerda */
   }
 
+  .imagem-customizada{
+    margin: 10px;
+  }
   .nav ul {
     margin-top: 10px; /* Adiciona espaçamento superior */
   }
@@ -68,6 +72,8 @@
     flex-direction: column; /* Organiza verticalmente em telas menores */
     align-items: flex-start; /* Alinha os elementos à esquerda */
   }
+  .imagem-customizada{
+margin: 10px;  }
 
   .nav ul {
     margin-top: 0px; /* Adiciona espaçamento superior */

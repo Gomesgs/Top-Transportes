@@ -1,9 +1,9 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { importProvidersFrom } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; // Importar HttpClientModule
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Importar os módulos de formulários
+//import { ButtonModule } from 'primeng/button';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -11,7 +11,7 @@ bootstrapApplication(AppComponent, {
       BrowserModule,
       FormsModule,
       ReactiveFormsModule,
-      HttpClientModule // Adicionar HttpClientModule como provedor
+ //     ButtonModule,
     )
   ]
 })
