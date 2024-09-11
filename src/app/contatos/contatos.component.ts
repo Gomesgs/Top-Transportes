@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
+
 @Component({
   selector: 'app-contatos',
   standalone: true,
   templateUrl: './contatos.component.html',
   styleUrls: ['./contatos.component.css'],
-  imports: [CommonModule]
+  imports: [CommonModule, ButtonModule, RippleModule]
 })
 export class ContatosComponent implements OnInit {
   isSending = false;  // Variável para controlar o estado do envio
@@ -17,7 +20,7 @@ export class ContatosComponent implements OnInit {
   }
 
   public sendEmail(e: Event) {
-    e.preventDefault(); 
+    e.preventDefault();
 
     if (this.isSending) {
       return; // Se já estiver enviando, impede múltiplos envios

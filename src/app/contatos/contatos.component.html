@@ -8,10 +8,12 @@
       <label>Mensagem</label>
       <textarea name="message" formControlName="message" required></textarea>
 
+      <div>
       <!-- O botão de envio será exibido apenas enquanto o email não for enviado -->
-      <button *ngIf="!isSent" type="submit" [disabled]="isSending">
+      <button *ngIf="!isSent" type="submit" [disabled]="isSending" pButton pRipple class="p-button-success">
         {{ isSending ? 'Enviando...' : 'ENVIAR' }}
       </button>
+      </div>
     </form>
 
     <div class="contact-info">

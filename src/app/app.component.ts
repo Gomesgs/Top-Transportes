@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { EquipmentsComponent } from './equipments/equipments.component';
 import { ContatosComponent } from './contatos/contatos.component';
 import { BackgroundComponent } from "./background/background.component";
+import { ButtonModule } from 'primeng/button';
 
 // Importe os outros componentes conforme necessário
 
@@ -16,6 +17,7 @@ import { BackgroundComponent } from "./background/background.component";
   standalone: true,
   imports: [
     BackgroundComponent,
+    ButtonModule,
     HeaderComponent,
     CarouselComponent,
     ServicesComponent,
