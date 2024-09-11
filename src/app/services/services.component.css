@@ -1,45 +1,21 @@
 /* Services Section */
-.services {
-  padding: 2rem 0;
-  font-family: Bahnschrift;
-  font-style: italic;
-
-}
-
-.services .container {
-  text-align: center; /* Centraliza o texto e imagens */
-}
-
-.services h2 {
-  color: black;
-  background:rgb(236, 108, 44, 70%);
-  padding: 1em;
-  border-radius: 5px;
-  font-size: 3rem; /* Ajusta o tamanho da fonte conforme a largura da tela */
-  z-index: 10; /* Garante que o texto esteja sobre a imagem */
-  margin-bottom: 2rem;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center; /* Centraliza os itens da grade */
-}
-
 .service {
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center; /* Centraliza o texto dentro do bloco de serviço */
-  top: 60%; /* Ajuste o valor conforme necessário para posicionar o texto 70px abaixo do topo */
-  left: 70%x; /* Ajuste o valor conforme necessário para posicionar o texto 70px da esquerda */
-  color: white;
-  background: rgb(41,53,70, 60%);
-  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+  text-align: justify; /* Centraliza o texto dentro do bloco de serviço */
+  color: rgb(0, 0, 0);
+  background: rgba(120, 237, 250, 0.19);
+  padding: 2em;
   border-radius: 5px;
-  max-width: 70%; /* Evita que o texto ultrapasse as bordas da imagem */
+  max-width: 100%; /* Evita que o texto ultrapasse as bordas da imagem */
   font-size: calc(1em + 0.5vw); /* Ajusta o tamanho da fonte conforme a largura da tela */
-  z-index: 10; /* Garante que o texto esteja sobre a imagem */
+}
+
+.texto{
+  max-width: 600px;
 }
 
 .service h3 {
@@ -55,7 +31,6 @@
   width: 100%; /* Ajusta a largura da imagem ao contêiner */
   max-width: 300px; /* Define a largura máxima da imagem */
   height: auto; /* Altura automática para manter a proporção */
-  border-radius: 5px;
   display: block; /* Garante que a imagem seja exibida como um bloco */
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
@@ -72,7 +47,13 @@
   left: 0; /* Posiciona a imagem na esquerda do slide */
 }
 
+.midlle{
+  background-color: rgba(4, 4, 4, 0.19)
+}
 
+img{
+  border-radius: 10px ;
+}
 /* Media Queries */
 
 /* Tablets */

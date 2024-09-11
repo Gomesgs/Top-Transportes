@@ -1,8 +1,7 @@
 /* CTA Section */
 .cta {
   padding: 2rem 0;
-  background: #333;
-  color: #fff;
+  background: #3333332b;
   font-family: Bahnschrift;
 }
 
@@ -16,7 +15,8 @@
 .cta-content {
   flex: 1;
   padding: 20px;
-  color: white;
+  color: black;
+  text-shadow: 1px 1px 0 black;
   padding: 1em;
   border-radius: 5px;
   font-size: calc(1em + 0.5vw); /* Ajusta o tamanho da fonte conforme a largura da tela */
