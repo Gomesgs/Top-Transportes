@@ -2,6 +2,7 @@
   background-color: #212529; /* Cor do fundo do header */
   color: #fff; /* Cor do texto do header */
   padding: 20px 0; /* Espaçamento do header */
+  text-align: justify;
 }
 
 .container {

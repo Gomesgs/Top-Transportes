@@ -6,6 +6,7 @@
   height: 100vh; /* A altura do carrossel ocupa toda a altura da tela */
   justify-content: center;
   align-items: center;
+  text-align: justify;
 }
 
 .carousel-container {

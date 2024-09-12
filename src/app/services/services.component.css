@@ -1,4 +1,8 @@
 /* Services Section */
+.services{
+  text-align: justify;
+}
+
 .service {
   display: flex;
   flex-wrap: wrap;

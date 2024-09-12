@@ -1,6 +1,7 @@
 /* About Section */
 .about {
   padding: 2rem 0;
+  text-align: justify;
 }
 
 .about .container {
