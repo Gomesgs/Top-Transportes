@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule, } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
+//import { PrimeIcons } from 'primeng/api';
+
 
 @Component({
   selector: 'app-contatos',
   standalone: true,
   templateUrl: './contatos.component.html',
   styleUrls: ['./contatos.component.css'],
-  imports: [CommonModule, ButtonModule, RippleModule]
+  imports: [CommonModule,
+    ButtonModule,
+    RippleModule,
+  ]
 })
 export class ContatosComponent implements OnInit {
   isSending = false;  // Variável para controlar o estado do envio

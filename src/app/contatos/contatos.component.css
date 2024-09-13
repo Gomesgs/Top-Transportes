@@ -4,7 +4,7 @@
   color: white;
   font-size: calc(1em + 0.5vw); /* Ajuste da fonte conforme a tela */
   margin-bottom: 2rem;
-  padding: 20px;
+  padding: 100px;
   border-radius: 10px;
   text-align: justify;
 }
@@ -12,18 +12,25 @@
 .texto {
   max-width: 700px;
 }
+.containerlogo{
+display: flex;
+justify-content: space-around;
+width: 250px;
+}
 
-.contact .container {
+.link-container{
+  font-size: 3.5rem;
+}
+.container{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem; /* Espaço entre formulário e informações */
-  flex-wrap: wrap; /* Flexível para telas menores */
+  flex-wrap: nowrap;
+  padding: 30px;
+
 }
 
 .contact-form,
 .contact-info {
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   box-sizing: border-box;
   flex: 1 1 45%; /* Ambos ocupam 45% da largura */
@@ -48,17 +55,8 @@
   width: 100%;
 }
 
-.contact-info h3,
-.contact-info p {
-  margin-bottom: 10px;
-}
-
-.logo img {
-  width: 50px;
-  height: auto;
-}
-
 /* Estilos para a imagem de fundo */
+
 .contact::before {
   content: "";
   position: absolute;
